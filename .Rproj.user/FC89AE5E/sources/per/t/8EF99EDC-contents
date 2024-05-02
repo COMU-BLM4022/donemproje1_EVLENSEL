@@ -1,0 +1,22 @@
+Q1 : IMS platformunun belirlenmesi
+Lisansı:
+SuiteCRM, açık kaynaklı bir CRM yazılımıdır ve GNU Affero Genel Kamu Lisansı (AGPL) altında lisanslanmıştır.
+Kısa Tarihçe: 
+SuiteCRM, 2013 yılında başlatılan bir açık kaynaklı müşteri ilişkileri yönetimi (CRM) yazılımıdır. SugarCRM'in açık kaynaklı bir çatalı olarak başlamıştır ve SugarCRM'in topluluk sürümünden ayrıldıktan sonra geliştirilmeye devam edilmiştir. SuiteCRM'in temel amacı, işletmelerin müşteri ilişkilerini yönetmelerine, satış süreçlerini izlemelerine, pazarlama faaliyetlerini yürütmelerine ve verimliliklerini artırmalarına yardımcı olmaktır. SuiteCRM, geniş bir topluluk tarafından desteklenmektedir ve sürekli olarak güncellenmektedir, bu da kullanıcıların en son özelliklere ve güvenlik yamalarına erişimini sağlar. SuiteCRM, açık kaynaklı yapısı sayesinde esneklik ve özelleştirme imkanı sunar, bu da işletmelerin ihtiyaçlarına uygun çözümler oluşturmalarına olanak tanır. SuiteCRM, küçük işletmelerden büyük kurumsal firmalara kadar çeşitli sektörlerde ve boyutlardaki işletmeler tarafından yaygın olarak kullanılmaktadır.
+Özellikler:
+•	Müşteri ve Lead yönetimi
+•	Satış yönetimi (fırsat yönetimi, teklif oluşturma, sipariş yönetimi)
+•	Pazarlama yönetimi (kampanya yönetimi, e-posta pazarlaması, sosyal medya entegrasyonu)
+•	Müşteri destek yönetimi (talep yönetimi, yardım masası)
+•	Raporlama ve analiz
+•	Özelleştirme ve genişletme imkanları
+•	Kullanılan Yazılım ve Teknolojiler:
+•	Yazılım: PHP (Laravel Framework), JavaScript (Vue.js), HTML, CSS
+•	Veritabanı: MySQL veya MariaDB
+•	Diğer Teknolojiler: Apache veya Nginx (web sunucusu), Docker (uygulama dağıtımı), Git (sürüm kontrolü)
+•	API Özellikleri: SuiteCRM, RESTful API sunar. Bu API, dış uygulamaların SuiteCRM verilerine erişmesini ve SuiteCRM üzerinde işlemler yapmasını sağlar. Özellikler arasında müşteri ve lead yönetimi, satış yönetimi, pazarlama yönetimi gibi temel CRM işlevleri bulunur.
+Rol Oynayan Sebepler:
+•	Emlak Alanında Uygunluk: SuiteCRM, müşteri ve mülk yönetimi, satış yönetimi ve pazarlama gibi temel işlevleri içerir, bu da emlak sektörü için idealdir.
+•	Esneklik ve Özelleştirme İmkanı: SuiteCRM'in açık kaynaklı olması ve modüler yapısı, emlak firmalarının iş süreçlerine göre özelleştirilmesine ve genişletilmesine olanak tanır.
+•	Daha Önceki Deneyimler: Ekip üyelerimizin da ha önce SuiteCRM veya benzer CRM çözümleriyle çalışmış olması, SuiteCRM'i seçmemizde etkili olmuştur.
+•	Maliyet Etkisi: SuiteCRM'in açık kaynaklı ve ücretsiz olması, emlak firmaları için maliyet açısından avantajlı bir seçenek sunar.
