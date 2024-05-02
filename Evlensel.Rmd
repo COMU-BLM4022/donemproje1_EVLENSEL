@@ -53,3 +53,17 @@ Zorluklar ve Avantajlar:
 Rakipler ve Karşılaştırma:
 Gerçek dünya rakiplerimiz arasında geleneksel emlakçılar ve diğer online emlak platformları bulunmaktadır. Geleneksel emlakçılar, yerel bilgi ve deneyim avantajına sahip olabilirken, online platformlar geniş bir müşteri kitlesine ulaşma avantajına sahiptir. Ancak, SuitCRM gibi bir IMS kullanarak, işimizdeki verimliliği artırarak ve müşteri ilişkilerini daha etkin bir şekilde yöneterek rekabet avantajı elde edebiliriz.
 
+
+
+Q4 : İyileştirme (optimizasyon) stratejisi 
+
+Projenin son döneminde R kodu kullanarak yapacağımız veri analizi ile bir dizi iyileştirme stratejisi uygulamayı planlıyoruz. Bu stratejilerin amacı, iş süreçlerimizi daha verimli hale getirerek çeşitli faydalar sağlamaktır.
+Pazarlama Stratejilerinin Geliştirilmesi: Veri analizi yoluyla müşteri davranışlarını ve tercihlerini daha iyi anlayarak, pazarlama stratejilerimizi optimize edebiliriz. Bu sayede, pazarlama bütçesini daha etkili bir şekilde kullanarak satışları artırabiliriz.
+
+Satış Döngüsünün Kısaltılması: Müşteri iletişimi ve takip süreçlerini analiz ederek, satış döngüsünü kısaltmak için yeni stratejiler geliştirebiliriz. Bu, müşteri memnuniyetini artırırken aynı zamanda işlem hızını da artırabilir.
+Müşteri Memnuniyetinin Artırılması: Veri analiziyle müşteri geri bildirimlerini değerlendirerek, hizmet kalitesini artırmak için önlemler alabiliriz. Müşteri memnuniyeti arttıkça, tekrar eden müşteri sayısı artar ve işin karlılığı artar.
+Maliyet Optimizasyonu: İşletme maliyetlerini azaltmak için veri analizi yaparak, gereksiz harcamaları belirleyebilir ve masrafları minimize edebiliriz. Bu, işletme karlılığını artırır ve rekabet avantajı sağlar.
+
+İş Süreçlerinin Otomasyonu: Veri analizi sonuçlarına dayanarak, tekrarlayan iş süreçlerini otomatikleştirebiliriz. Bu, zaman ve kaynak tasarrufu sağlayarak iş süreçlerinin hızını artırır.
+Bu iyileştirme stratejilerini uygulayarak, işimizin karlılığını artırabilir, müşteri memnuniyetini ve rekabet gücünü artırabiliriz.
+
