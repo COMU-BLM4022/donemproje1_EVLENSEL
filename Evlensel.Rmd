@@ -38,3 +38,18 @@ Veri seti CSV formatında sunulmuştur ve 27 sütun ve 2983 satır içermektedir
 IMS'e veri setini ithal etmek için, CSV dosyasını kullanarak SuitCRM'in yönetim arayüzünde bulunan "Veri İçe Aktarımı" veya benzeri bir seçenek kullanılacaktır. Daha sonra, R dili kullanılarak SuitCRM'den veri çekmek için SuitCRM'in API'si kullanılacak. Bu
 API, veri setine erişim sağlayacak ve R ile veri analizi, raporlama ve modelleme işlemleri yapmamıza olanak tanıyacaktır. Bu yöntem, veri güncellemelerini de kolaylıkla yönetmemizi sağlayacaktır
 
+
+Q3 : İş  tanımı 
+
+İş Tanımı:
+İstanbul'da faaliyet gösteren şirketimiz, SuitCRM'i kullanarak müşterilere en uygun satılık evleri bulmayı hedefleyen bir emlak şirketidir. Müşterilerin taleplerini karşılamak için özenle seçilmiş bir mülk portföyüne sahibiz ve her müşteriye özel çözümler sunarak memnuniyet sağlamayı amaçlıyoruz. Şirketimizin aktiviteleri arasında müşteri ve ev sahipleri arasındaki görüşmeleri düzenlemek, mülkleri gezdirmek ve satış süreçlerini yönetmek bulunmaktadır. Bunun yanı sıra, takvim yönetimi, pazarlama faaliyetleri ve iş performansının analizi gibi rutin operasyonlar da yürütülmektedir.
+
+Gelir Modeli:
+Şirketimizin gelir modeli, başarılı bir satış gerçekleştiğinde hem eski ev sahibinden hem de yeni ev sahibinden uygun bir komisyon almak üzerine kuruludur. Bu, hem satıcıların hem de alıcıların çıkarlarını göz önünde bulundurarak adil bir gelir dağılımı sağlar
+
+Zorluklar ve Avantajlar:
+İşimizin zorlukları arasında potansiyel kriz durumlarında satışların durması ve sürekli müşteri iletişimi gereksinimi bulunmaktadır. Ancak, geliştirilen yazılım sayesinde doğru evin daha hızlı tespit edilmesi ve zaman kazanılması gibi avantajlar da bulunmaktadır. Ayrıca, müşteri ilişkilerinin kişiselleştirilmesi ve pazarlama faaliyetlerinin otomatikleştirilmesi gibi CRM'in sunduğu özellikler, işimizin verimliliğini artırır.
+
+Rakipler ve Karşılaştırma:
+Gerçek dünya rakiplerimiz arasında geleneksel emlakçılar ve diğer online emlak platformları bulunmaktadır. Geleneksel emlakçılar, yerel bilgi ve deneyim avantajına sahip olabilirken, online platformlar geniş bir müşteri kitlesine ulaşma avantajına sahiptir. Ancak, SuitCRM gibi bir IMS kullanarak, işimizdeki verimliliği artırarak ve müşteri ilişkilerini daha etkin bir şekilde yöneterek rekabet avantajı elde edebiliriz.
+
