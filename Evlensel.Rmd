@@ -24,3 +24,17 @@ Rol Oynayan Sebepler:
 •	Esneklik ve Özelleştirme İmkanı: SuiteCRM'in açık kaynaklı olması ve modüler yapısı, emlak firmalarının iş süreçlerine göre özelleştirilmesine ve genişletilmesine olanak tanır.
 •	Daha Önceki Deneyimler: Ekip üyelerimizin da ha önce SuiteCRM veya benzer CRM çözümleriyle çalışmış olması, SuiteCRM'i seçmemizde etkili olmuştur.
 •	Maliyet Etkisi: SuiteCRM'in açık kaynaklı ve ücretsiz olması, emlak firmaları için maliyet açısından avantajlı bir seçenek sunar.
+
+
+Q2 : Dataset tanımı
+Veri seti, (https://www.kaggle.com/datasets/egeakyol/real-estate-in-istanbul-turkey-emlakjet) 
+(https://www.kaggle.com/datasets/aselasel/house-price-dataset)
+bulunan bir Kaggle veri setidir. Veri seti, İstanbul'daki satılık evlerin fiyatları ve özelliklerini içermektedir. İlan numarası, güncelleme tarihi, kategori, brüt metrekare, bina yaşı, kat sayısı, kullanım durumu, yatırıma uygunluk, eşya durumu ve banyo sayısı gibi özellikleri içermektedir.
+
+Veri, gerçek ve güncel değerler içermektedir ve Türkiye'nin İstanbul şehrindeki emlak piyasasına ait verileri temsil etmektedir. Veri seti, EmlakJet.com üzerinden web scraping yöntemiyle toplanmıştır.
+
+Veri seti CSV formatında sunulmuştur ve 27 sütun ve 2983 satır içermektedir. Bu veri seti, makine öğrenme algoritmaları ve bilgi çıkarımı için oldukça küçük olsa da, SQL, Deep Pandas, Selenium kütüphanesi ile veri çekme ve gelişmiş özellik mühendisliği yöntemlerini öğrenme amacıyla kullanılacaktır.
+
+IMS'e veri setini ithal etmek için, CSV dosyasını kullanarak SuitCRM'in yönetim arayüzünde bulunan "Veri İçe Aktarımı" veya benzeri bir seçenek kullanılacaktır. Daha sonra, R dili kullanılarak SuitCRM'den veri çekmek için SuitCRM'in API'si kullanılacak. Bu
+API, veri setine erişim sağlayacak ve R ile veri analizi, raporlama ve modelleme işlemleri yapmamıza olanak tanıyacaktır. Bu yöntem, veri güncellemelerini de kolaylıkla yönetmemizi sağlayacaktır
+
