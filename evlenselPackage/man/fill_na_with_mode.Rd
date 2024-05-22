@@ -5,8 +5,6 @@
 \title{Excel dosyasındaki belirtilen sütundaki eksik değerleri mod ile doldurarak yeni bir Excel dosyasına yazma}
 \usage{
 fill_na_with_mode(input_file, column_name, output_file)
-
-fill_na_with_mode(input_file, column_name, output_file)
 }
 \arguments{
 \item{input_file}{Giriş Excel dosyasının yolu ve adı.}
@@ -17,17 +15,11 @@ fill_na_with_mode(input_file, column_name, output_file)
 }
 \value{
 None
-
-None
 }
 \description{
 Excel dosyasındaki belirtilen sütundaki eksik değerleri mod ile doldurarak yeni bir Excel dosyasına yazma
-
-Excel dosyasındaki belirtilen sütundaki eksik değerleri mod ile doldurarak yeni bir Excel dosyasına yazma
 }
 \examples{
-fill_na_with_mode("dosya_adi.xlsx", "sütun_adı", "temizlenmis_veri.xlsx")
-
 fill_na_with_mode("dosya_adi.xlsx", "sütun_adı", "temizlenmis_veri.xlsx")
 
 }

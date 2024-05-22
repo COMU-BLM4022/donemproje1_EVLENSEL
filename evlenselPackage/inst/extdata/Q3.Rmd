@@ -53,6 +53,25 @@ CouncilArea: Modelimiz için 2. önceliktedir. char.
 ## Veri Keşfi
 Veri setinde 4 sütun dışında eksik veri bulunan sütun bulunmamaktadır. Bu sütunların da kabul edilebilir düzeyde eksik verisi bulunmaktadır. Sayısal veri barındıran sütunlar ortalama ile doldurulmuştur ancak bu işlemde ondalıklı sayı kullanılmamıştır. Bunun bir sebebi tutarsız veriden kaçınmaktır. 1987.5 yılında yapılmış bir bina gibi veyahut 1.76 park yeri gibi değerleri veri setinde bulundurmak istenilmemiştir. Kategorik veri tipinde eksik verisi bulunan sütun mod ile doldurulmuştur. Tespit edilen eksik verilerin oransal anlamda çok az olması sebebiyle modeli manipüle edebilecek bir konuma sahip olmadığına kanaat getirilmiştir. Veri setinde aykırı değer bulunmadığı için ekstra işlem yapılmamıştır.
 
+## Korelasyon analizi 
+
+Aşağıda bir örneğini bulacağınız korelasyon analizinde Price sütunu ile diğer sayısal sütunların korelasyonu bulunmaktadır. Sütunların Price sütunu ile ilişkileri gözlemlenmektedir. Örneğin Rooms sütunu Price ile yüksek ve pozitif bir korelasyona sahiptir. Birinin artışı diğerini arttırmakta birini azalışı diğerini azaltmaktadır. Basit bir analizle oda sayısı arttıkça evin fiyatı artıyor diyebiliriz. Bir diğer örnekte YearBuilt sütunu negatif ve yüksek bir korelasyona sahiptir .Türkiye standartlarında uzak olsa da bir evin eski olması fiyatının da yüksek olmasını beraberinde getiriyor. BuildingArea, PropertCount, LandSize sütunları negatif veya pozitif korelasyonları düşük olması da gösteriyor ki bu sütunların evin fiyatını çok etkilememektedir.
+
+### Korelasyon Tablosu
+```{r}
+  library(here)
+  evlenselPackage::calculate_correlations_with_price_excel(here("melb_data_1.xlsx"),"Price")
+  
+```
+
+## Dağılım Analizi
+
+```{r}
+  library(here)
+  evlenselPackage::analyze_distribution(here("melb_data_1.xlsx"),"Price")
+  
+  
+```
 
 
 ## Veri Ön İşleme Adımları 
@@ -168,14 +187,20 @@ Method
 ### Parametre Olarak Verilen 2 Sütunun Görselleştirilmesi
 
 İstenilen 2 sütunu parametre olarak vermemiz yeterlidir.
+
+Rooms - Price
 ```{r}
   #install.packages("ggplot2")
   library(here)
 evlenselPackage::visualize_columns(here("melb_data_1.xlsx"),"Price","Rooms")
 ```
 
-
-
+Distance - Price
+```{r}
+  #install.packages("ggplot2")
+  library(here)
+evlenselPackage::visualize_columns(here("melb_data_1.xlsx"),"Price","Distance")
+```
 
 
 
