@@ -68,13 +68,22 @@ Aşağıda bir örneğini bulacağınız korelasyon analizinde Price sütunu ile
 
 ```{r}
   library(here)
-  evlenselPackage::analyze_distribution(here("melb_data_1.xlsx"),"Price")
+  evlenselPackage::analyze_distribution(here("melb_data_1.xlsx"),"Landsize")
+  
+  
   
   
 ```
 
 
 ## Veri Ön İşleme Adımları 
+
+## Numeric Veriye Çevirme
+```{r}
+  library("here")
+  evlenselPackage::convert_and_write_excel(here("melb_data_1.xlsx"),"Landsize")
+```
+
 
 ### Eksik Verilerin Gösterilmesi
 
@@ -199,9 +208,18 @@ Distance - Price
 ```{r}
   #install.packages("ggplot2")
   library(here)
-evlenselPackage::visualize_columns(here("melb_data_1.xlsx"),"Price","Distance")
+evlenselPackage::visualize_columns(here("melb_data_1.xlsx"),"Price","YearBuilt")
 ```
 
+
+## Model
+```{r}
+  library(here)
+  install.packages("caret")
+  evlenselPackage::train_model(here("melb_data_1.xlsx"))
+
+
+```
 
 
 
