@@ -1,0 +1,82 @@
+---
+title: "Q1"
+output: html_document
+date: "2024-05-22"
+---
+## Q2: İş Problemini Çözmede Kullanılacak Veri Seti
+
+### Veri Seti Detayları
+
+- **Rooms:** Oda sayısı
+
+- **Price:** Dolar cinsinden fiyat
+
+- **Method:** 
+  - S: Gayrimenkul satıldı
+  - SP: Satış öncesi gayrimenkul satıldı
+  - PI: İhalede geçirilen gayrimenkul
+  - PN: Satış öncesi belirtilmeyen gayrimenkul
+  - SN: Belirtilmeyen satış
+  - NB: Teklif yok
+  - VB: Satıcı teklifi
+  - W: İhale öncesi çekilme
+  - SA: İhale sonrası satıldı
+  - SS: İhale sonrası fiyat belirtilmemiş
+  - N/A: Fiyat veya en yüksek teklif mevcut değil
+
+- **Type:** 
+  - br: Yatak odası sayısı
+  - h: Ev, kır evi, villa, yarı müstakil, teras
+  - u: Daire, dubleks
+  - t: Şehir evi
+  - dev site: Geliştirme alanı
+  - o res: Diğer konut türleri
+
+- **SellerG:** Emlakçı
+
+- **Date:** Satış tarihi
+
+- **Distance:** CBD'ye olan mesafe
+
+- **Regionname:** Genel Bölge (Batı, Kuzey Batı, Kuzey, Kuzey Doğu ...vs.)
+
+- **Propertycount:** Mahallede bulunan gayrimenkul sayısı
+
+- **Bedroom2:** Kazınmış yatak odası sayısı (farklı kaynaktan)
+
+- **Bathroom:** Banyo sayısı
+
+- **Car:** Araç park yeri sayısı
+
+- **Landsize:** Arazi büyüklüğü
+
+- **BuildingArea:** Bina alanı
+
+- **CouncilArea:** Alanın yönetim konseyi
+
+
+```{r}
+library(readxl)
+library(here)
+melb<-read_excel(here("melb_data_1.xlsx"))
+# proje içinde dosyanın varlığından emin olunuz
+View(melb_data_1)
+```
+
+### Veri Setinin Kaynağı
+Bu projede iş problemini çözmek için kullanılacak veri seti Kaggle'dan elde edilmiştir. Veri setinin detaylarına ve erişimine aşağıdaki linkten ulaşabilirsiniz:
+
+
+[Kaggle Melbourne Housing Snapshot Veri Seti](https://www.kaggle.com/datasets/dansbecker/melbourne-housing-snapshot)
+
+### Veri Setinin Oluşturulması
+
+> Bu bir alıntıdır. This is a snapshot of a dataset created by Tony Pino.
+It was scraped from publicly available results posted every week from Domain.com.au. He cleaned it well, and now it's up to you to make data analysis magic. The dataset includes Address, Type of Real estate, Suburb, Method of Selling, Rooms, Price, Real Estate Agent, Date of Sale and distance from C.B.D.
+
+Bu veri seti, Tony Pino tarafından oluşturulmuş ve Domain.com.au üzerinde her hafta yayınlanan kamuya açık sonuçlardan kazınmıştır. Veri seti özenle temizlenmiş ve şimdi veri analizi için hazır durumdadır. İçerdiği bilgiler arasında Adres, Gayrimenkul Türü, Mahalle, Satış Yöntemi, Oda Sayısı, Fiyat, Emlakçı, Satış Tarihi ve CBD'ye olan mesafe gibi detaylar bulunmaktadır.
+
+### Veri Seti Üzerindeki Değişiklikler
+
+Veri setinde Q3 adımında daha detaylı şekilde bahsedilecek olan veri ön işleme,
+veri görselleştirme adımları uygulanacaktır. Veriye sentetik veri eklenmeyecektir. Bir sebebi modeli manipüle edilmesinden korumaktır. 
