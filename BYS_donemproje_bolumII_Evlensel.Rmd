@@ -365,3 +365,25 @@ Distance - Price
   library(here)
 evlenselPackage::visualize_columns(here("melb_data_1.xlsx"),"Price","Distance")
 ```
+
+#Q4: Veri Setinin BYS Platformuna İthali
+Veri setimizi SuitCRM platformuna entegre ettik. Bu süreçte izlediğimiz adımlar aşağıdaki gibidir:
+
+*SuitCRM Üzerinde Modül Oluşturma:*
+
+-Öncelikle SuitCRM içerisinde veri setimizi ithal edeceğimiz bir modül oluşturduk. Bunun için SuitCRM'in "Module Builder" aracını kullandık.
+-Yeni bir package (paket) oluşturduk ve bu paketin içerisine veri setimizin yapısına uygun bir modül ekledik.
+
+*Field (Alan) Ayarlarını Yapma:*
+
+-Oluşturduğumuz modül içerisinde veri setimizdeki sütunlara karşılık gelecek alanları (fields) tanımladık.
+-Her bir alanın türünü (metin, sayı, tarih, vb.) veri setimizdeki verilerin türlerine uygun olacak şekilde ayarladık.
+
+*CSV Dosyasının İthal Edilmesi:*
+
+-SuitCRM'in "Import" işlevini kullanarak CSV dosyamızı platforma yükledik.
+-İthal işlemi sırasında, CSV dosyasındaki sütunları, oluşturduğumuz modüldeki uygun alanlara eşleştirdik.
+-İthalat süreci tamamlandıktan sonra, veri setimiz SuitCRM'deki "CustomDataModule" modülünde başarılı bir şekilde yer aldı.
+-Bu süreçte herhangi bir kodlama gereksinimi olmadan, SuitCRM'in sağladığı kullanıcı arayüzü araçlarını kullanarak veri setimizi platforma entegre ettik. Böylece, veri setimiz SuitCRM üzerinden erişilebilir ve analiz edilebilir hale geldi.
+
+-Veri ithalinin başarılı olduğunu ve verilerin doğru şekilde işlendiğini doğrulamak için SuitCRM'deki modül üzerinden verileri kontrol ettik. Tüm verilerin düzgün bir şekilde yer aldığını ve herhangi bir veri kaybı olmadığını teyit ettik.
