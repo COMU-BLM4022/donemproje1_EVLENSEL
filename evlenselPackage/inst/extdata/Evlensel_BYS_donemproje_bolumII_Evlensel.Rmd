@@ -5,6 +5,22 @@ date: "2024-05-22"
 ---
 
 ## Q1: İş Probleminin Tanımı
+```{r setup,include=FALSE}
+  # Gerekli paketleri yükleyin
+if (!require("readxl")) {
+  install.packages("readxl")
+}
+library(readxl)
+if (!require("here")) {
+  install.packages("here")
+}
+library(here)
+
+
+# Excel dosyasını okuyun ve 'melb_data_1' nesnesine atayın
+melb_data_1 <- read_excel(here("melb_data_1.xlsx"))
+
+```
 
 Bir emlak şirketinin temel amacı, sahip olduğu gayrimenkulleri en kısa sürede ve en yüksek fiyata satmaktır. Bu doğrultuda, ev satışı için gelen müşterilere en uygun fiyatı belirlemek, şirketin karlılığını ve müşteri memnuniyetini doğrudan etkileyen kritik bir faktördür. Ancak, emlak piyasası dinamik ve karmaşıktır; fiyatlar konum, evin fiziksel özellikleri, piyasa koşulları, ve diğer birçok faktöre bağlı olarak sürekli değişkenlik gösterir.
 
