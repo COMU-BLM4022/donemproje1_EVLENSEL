@@ -393,6 +393,7 @@ evlenselPackage::visualize_columns(here("melb_data_1.xlsx"),"Price","YearBuilt")
 ```
 
 
+
 ## Model
 ```{r}
   library(here)
@@ -424,6 +425,49 @@ Veri setimizi SuitCRM platformuna entegre ettik. Bu süreçte izlediğimiz adım
 -Bu süreçte herhangi bir kodlama gereksinimi olmadan, SuitCRM'in sağladığı kullanıcı arayüzü araçlarını kullanarak veri setimizi platforma entegre ettik. Böylece, veri setimiz SuitCRM üzerinden erişilebilir ve analiz edilebilir hale geldi.
 
 -Veri ithalinin başarılı olduğunu ve verilerin doğru şekilde işlendiğini doğrulamak için SuitCRM'deki modül üzerinden verileri kontrol ettik. Tüm verilerin düzgün bir şekilde yer aldığını ve herhangi bir veri kaybı olmadığını teyit ettik.
+
+
+
+## Q5 : Yapılması planlanan veri analizleri
+
+### Regresyon 
+```{r}
+  library(here)
+  model_result <- evlenselPackage::train_model(here("melb_data_1.xlsx"))
+  
+  predictions <- predict_from_model(model_result$model, model_result$test_data)
+  head(predictions)
+```
+### Karar Ağacı 
+```{r}
+library(here)
+# Path to the Excel file
+file_path <- here("melb_data_1.xlsx")
+
+# Train the model
+model <- evlenselPackage::karar_agaci_train(file_path)
+
+# Create a new data frame for prediction
+new_data <- data.frame(
+  CouncilArea = c("Yarra", "Yarra"),
+  YearBuilt = c(2000, 2010),
+  BuildingArea = c(150, 160),
+  Landsize = c(200, 220),
+  Car = c(1, 2),
+  Bathroom = c(2, 3),
+  Bedroom2 = c(3, 4),
+  Distance = c(2.5, 3.0)
+)
+
+# Predict prices
+predictions <- evlenselPackage::karar_agaci_predict(model, new_data)
+
+# Print predictions
+print(predictions)
+
+
+
+```
 
 ## Q6 : Çalışan platformun gösterildiği sesli anlatımlı video
 

@@ -1,10 +1,13 @@
 ---
-title: "Q1"
+
+title: "Bilgi Yönetim Sistemleri - Bitirme Projesi Rapor :  Muhammet Fatih Oğul 200401119 Haticenur Oğuzalp 200401070 Beyzanur Şentürk 200401027 Furkan Solak 200401090 Anıl Sever 190401030"
+
 output: html_document
 date: "2024-05-22"
 ---
 
 ## Q1: İş Probleminin Tanımı
+
 ```{r setup,include=FALSE}
   # Gerekli paketleri yükleyin
 if (!require("readxl")) {
@@ -21,7 +24,6 @@ library(here)
 melb_data_1 <- read_excel(here("melb_data_1.xlsx"))
 
 ```
-
 
 Bir emlak şirketinin temel amacı, sahip olduğu gayrimenkulleri en kısa sürede ve en yüksek fiyata satmaktır. Bu doğrultuda, ev satışı için gelen müşterilere en uygun fiyatı belirlemek, şirketin karlılığını ve müşteri memnuniyetini doğrudan etkileyen kritik bir faktördür. Ancak, emlak piyasası dinamik ve karmaşıktır; fiyatlar konum, evin fiziksel özellikleri, piyasa koşulları, ve diğer birçok faktöre bağlı olarak sürekli değişkenlik gösterir.
 
@@ -251,9 +253,7 @@ Aşağıda bir örneğini bulacağınız korelasyon analizinde Price sütunu ile
   library(here)
   evlenselPackage::analyze_distribution(here("melb_data_1.xlsx"),"Price")
   
-  
-  
-  
+ 
 ```
 
 
@@ -389,6 +389,9 @@ Distance - Price
 ```{r}
   #install.packages("ggplot2")
   library(here)
+evlenselPackage::visualize_columns(here("melb_data_1.xlsx"),"Price","Distance")
+```
+
 evlenselPackage::visualize_columns(here("melb_data_1.xlsx"),"Price","YearBuilt")
 ```
 
@@ -401,7 +404,6 @@ evlenselPackage::visualize_columns(here("melb_data_1.xlsx"),"Price","YearBuilt")
   predictions <- predict_from_model(model_result$model, model_result$test_data)
   head(predictions)
 ```
-
 
 #Q4: Veri Setinin BYS Platformuna İthali
 Veri setimizi SuitCRM platformuna entegre ettik. Bu süreçte izlediğimiz adımlar aşağıdaki gibidir:
@@ -424,6 +426,7 @@ Veri setimizi SuitCRM platformuna entegre ettik. Bu süreçte izlediğimiz adım
 -Bu süreçte herhangi bir kodlama gereksinimi olmadan, SuitCRM'in sağladığı kullanıcı arayüzü araçlarını kullanarak veri setimizi platforma entegre ettik. Böylece, veri setimiz SuitCRM üzerinden erişilebilir ve analiz edilebilir hale geldi.
 
 -Veri ithalinin başarılı olduğunu ve verilerin doğru şekilde işlendiğini doğrulamak için SuitCRM'deki modül üzerinden verileri kontrol ettik. Tüm verilerin düzgün bir şekilde yer aldığını ve herhangi bir veri kaybı olmadığını teyit ettik.
+
 
 ## Q6 : Çalışan platformun gösterildiği sesli anlatımlı video
 
