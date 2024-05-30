@@ -36,4 +36,5 @@ analyze_distribution <- function(file_path, column_name) {
 
   # Çizimleri yan yana göster
   cowplot::plot_grid(hist_plot, box_plot, ncol = 2)
+
 }

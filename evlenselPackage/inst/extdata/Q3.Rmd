@@ -215,10 +215,10 @@ evlenselPackage::visualize_columns(here("melb_data_1.xlsx"),"Price","YearBuilt")
 ## Model
 ```{r}
   library(here)
-  install.packages("caret")
-  evlenselPackage::train_model(here("melb_data_1.xlsx"))
-
-
+  model_result <- evlenselPackage::train_model(here("melb_data_1.xlsx"))
+  
+  predictions <- predict_from_model(model_result$model, model_result$test_data)
+  head(predictions)
 ```
 
 
